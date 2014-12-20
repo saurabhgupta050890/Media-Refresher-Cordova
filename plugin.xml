@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="com.metacube.metacampus.mediarefresher"
+      version="0.0.1">
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0" />
+  </engines>
+
+  <name>Media Refresher</name>
+  <description>A cordova plugin to for Media Rescan on the device. </description>
+  <keywords>cordova,media</keywords>
+  <!--<repo>https://github.com/ti8mag/DocumentHandler.git</repo>-->
+
+  <license>Apache 2.0</license>
+
+  <js-module src="www/MediaRefresher.js" name="MediaRefresher">
+    <clobbers target="mediaRefresh" />
+  </js-module>
+
+  <platform name="android">
+
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="MediaRefresher" >
+				<param name="android-package" value="com.metacube.metacampus.mediarefresher.RefreshMedia"/>
+			</feature>
+		</config-file>
+
+    <source-file src="src/android/RefreshMedia.java" target-dir="com/metacube/metacampus/mediarefresher" />
+
+  </platform>
+
+	<!--<platform name="ios">
+		
+		<config-file target="config.xml" parent="/*">
+			<feature name="DocumentHandler">
+				<param name="ios-package" value="DocumentHandler"/>
+			</feature>
+		</config-file>
+
+    <framework src="QuickLook.framework" />
+
+		<source-file src="src/ios/DocumentHandler.m" />
+
+		<header-file src="src/ios/DocumentHandler.h" />
+
+	</platform>-->
+
+
+</plugin>
