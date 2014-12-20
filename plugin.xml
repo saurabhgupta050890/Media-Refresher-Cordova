@@ -27,7 +27,7 @@
 			</feature>
 		</config-file>
 
-    <source-file src="src/android/RefreshMedia.java" target-dir="com/metacube/metacampus/mediarefresher" />
+    <source-file src="src/android/RefreshMedia.java" target-dir="src/com/metacube/metacampus/mediarefresher" />
 
   </platform>
 
