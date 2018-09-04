@@ -1,5 +1,5 @@
 {
-  "name": "Media Refresher",
+  "name": "com.metacube.metacampus.mediarefresher",
   "version": "0.0.1",
   "description": "A cordova plugin to for Media Rescan on the device",
   "cordova": {
