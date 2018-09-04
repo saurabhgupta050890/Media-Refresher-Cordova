@@ -1,0 +1,17 @@
+{
+  "name": "Media Refresher",
+  "version": "0.0.1",
+  "description": "A cordova plugin to for Media Rescan on the device",
+  "cordova": {
+    "id": "com.metacube.metacampus.mediarefresher",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "Apache 2.0"
+}
